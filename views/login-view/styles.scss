@@ -2,7 +2,6 @@
 @import "../../sharedStyles//fonts.scss";
 
 .login-container {
-  width: 100vw;
   display: flex;
   flex-direction: column;
   
@@ -35,7 +34,6 @@
     overflow: hidden;
     height: 80px;
     display: flex;
-    width: 100vw;
     position: sticky;
 
     .login-button-container {
