@@ -1,0 +1,16 @@
+@import "../../../sharedStyles/fonts.scss";
+@import "../../../sharedStyles/colors.scss";
+
+.modal-controller {
+  background-color: $modal-grey;
+  height: 64px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.modal-controller-components {
+  margin-top: 16px;
+  margin-right: 20px;
+  margin-left: 20px;
+}

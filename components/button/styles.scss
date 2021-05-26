@@ -1,0 +1,73 @@
+@import "../../sharedStyles/colors.scss";
+@import "../../sharedStyles/fonts.scss";
+
+.button {
+
+  &.primary-large {
+    height: 40px;
+    background-color: $pink;
+    @include h4;
+    border: 0px;
+    color: $white;
+    border-radius: 24px;
+    padding: 10px 16px;
+    min-width: 32px;
+
+    &.disabled {
+      background-color: $Athens-50;
+    }
+
+    &:hover {
+      opacity: 0.9;
+      cursor: pointer;
+    }
+  }
+
+  &.primary {
+    height: 32px;
+    background-color: $pink;
+    @include h4;
+    border: 0px;
+    color: $white;
+    border-radius: 24px;
+    padding: 6px 16px 6px 16px;
+    min-width: 32px;
+
+    &.disabled {
+      background-color: $Athens-50;
+    }
+
+    &:hover {
+      opacity: 0.9;
+      cursor: pointer;
+    }
+  }
+
+  &.secondary {
+    height: 32px;
+    background-color: $white;
+    @include h4;
+    border: 0px;
+    color: $pink;
+    border-radius: 24px;
+    padding: 6px 16px 6px 16px;
+    border: 1px solid $pink;
+    min-width: 32px;
+
+    &.disabled {
+      background-color: $white;
+      color: $Athens-50;
+      border: 1px solid $Athens-50;
+
+      &:hover {
+        background-color: $white;
+      }
+    }
+
+    &:hover {
+      opacity: 0.9;
+      background-color: rgba(239, 84, 102, 0.05);
+      cursor: pointer;
+    }
+  }
+}
