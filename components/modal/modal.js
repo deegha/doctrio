@@ -18,10 +18,6 @@ const Moadl = ({ children, isOpen, onClose, title }) => {
     <>
       <div className="modal-overlay" onClick={() => onClose()}/>
       <div className="modal-container">
-        <div modal="modal-container-header">
-          {title && <div className="modal-container-header-title">{title}</div>}
-          <div className="modal-container-header-close">Close</div>
-        </div>
         {children}
       </div>
     </>

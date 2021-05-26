@@ -1,0 +1,23 @@
+@import "../../../sharedStyles/colors.scss";
+@import "../../../sharedStyles/fonts.scss";
+
+.header-container {
+  background-color: $modal-grey;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .header-container-title {
+    @include h4;
+    margin-left: 20px;
+    margin-top: 18px;
+  }
+
+  .header-container-close {
+    margin-right: 20px;
+    margin-top: 18px;
+    cursor: pointer;
+  }
+
+}

@@ -1,6 +1,7 @@
 import "firebase/functions";
 import { useState } from "react";
 import Modal from "../components/modal/modal"
+import ModalHeader from "../components/modal/modal-header/modal-header";
 import withAuth from "../services/withAuth"
 
 const Home = () => {
@@ -10,7 +11,7 @@ const Home = () => {
   return <div>
     <button onClick={() => setOpen(!open)}>open modal</button>
     <Modal isOpen={open} onClose={() => setOpen(false)} title="add session model">
-      <h1>Hello world</h1>
+      <ModalHeader title="Test tile" onClose={() => setOpen(false)}/>
     </Modal>
   </div>
 }
