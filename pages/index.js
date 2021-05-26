@@ -1,21 +1,18 @@
-import { useEffect, useState, useContext } from "react"
-import "firebase/functions"
-import { firebase } from '../services/firebase'
+import "firebase/functions";
+import { useState } from "react";
+import Modal from "../components/modal/modal"
 import withAuth from "../services/withAuth"
-import Router from 'next/router'
-
 
 const Home = () => {
 
-  const logout = async() => {
-    await firebase.auth().signOut()
-    Router.push('/login')
-  }
+  const [open, setOpen] = useState(false)
 
-  return <>
-  <h1>Dashboard</h1>
-  <button onClick={ logout }>logout</button>
-  </>
+  return <div>
+    <button onClick={() => setOpen(!open)}>open modal</button>
+    <Modal isOpen={open} onClose={() => setOpen(false)} title="add session model">
+      <h1>Hello world</h1>
+    </Modal>
+  </div>
 }
 
 export default withAuth(Home)

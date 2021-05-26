@@ -3,7 +3,7 @@ import React,{ useState, createContext } from 'react'
 export const AppContext = createContext()
 
 const AppContextProvider = (props) => {
-  const [ page, setPage ] = useState(0)
+  const [ page, setPage ] = useState('home')
   const [ nextPage, setNextPage ] = useState("")
   
   return (

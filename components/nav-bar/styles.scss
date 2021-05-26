@@ -1,0 +1,96 @@
+@import "../../sharedStyles/colors.scss";
+@import "../../sharedStyles/fonts.scss";
+
+.navbar-container {
+  height: 100vh;
+  background-color: $navy-blue;
+  min-width: 240px;
+  max-width: 240px;
+  color: $white;
+  position: sticky;
+
+  @media (max-height: 600px) {
+    height: 100%;
+  }
+
+  .navbar-title {
+    @include h1;
+    padding-top: 28px;
+    margin-left: 56px;
+    font-weight: 600;
+  }
+
+  .navbar-list {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    @include h5;
+
+    .navbar-list-item {
+      display: flex;
+      flex-direction: row;
+      margin-left: 22.5px;
+      padding-left: 14.5px;
+      padding-top: 11px;
+      width: 180px;
+      height: 36px;
+      border-radius: 8px;
+      &:hover{
+        background-color: rgba(252, 252, 252, 0.2);
+      }
+
+      &.home, &.sessions, &.patients, &.balances, &.users {
+        background-color: rgba(252, 252, 252, 0.2);
+      }
+
+      .navbar-list-item-img {
+        width: 15px;
+        height: 16.67px;
+        margin-right: 8px;
+      }
+    }
+  }
+  
+  .navbar-footer {
+    margin-top: 35vh;
+    padding-right: 8px;
+    padding-left: 8px;
+
+    .navbar-footer-line {
+      width: 224px;
+      height: 0px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .navbar-footer-list {
+      margin-top: 24px;
+      display: flex;
+      flex-direction: column;
+      @include h5;
+      
+      .navbar-footer-item {
+        display: flex;
+        flex-direction: row;
+        margin-left: 14.5px;
+        padding-left: 14.5px;
+        padding-top: 11px;
+        width: 180px;
+        height: 36px;
+        border-radius: 8px;
+        &:hover{
+          background-color: rgba(252, 252, 252, 0.2);
+        }
+
+        &.help, &.account {
+          background-color: rgba(252, 252, 252, 0.2);
+        }
+  
+        .navbar-footer-item-img {
+          width: 15px;
+          height: 16.67px;
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+}
