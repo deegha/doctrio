@@ -7,6 +7,10 @@
   border-radius: 8px;
   display: flex;
   flex-direction: row-reverse;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .modal-controller-components {

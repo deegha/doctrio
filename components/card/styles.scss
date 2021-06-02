@@ -1,0 +1,20 @@
+@import "../../sharedStyles/colors.scss";
+@import "../../sharedStyles/fonts.scss";
+
+.card-primary {
+  background-color: $white;
+  border: 1px solid $Athens-40;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.card-secondary {
+  background-color: $modal-grey;
+  border: 1px solid $Athens-40;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  display: inline-block;
+}

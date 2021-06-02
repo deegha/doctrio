@@ -2,7 +2,7 @@ import "./styles.scss";
 import { createPortal } from "react-dom"
 import { useEffect, useState } from "react";
 
-const Moadl = ({ children, isOpen, onClose, title }) => {
+const Moadl = ({ children, isOpen, onClose, title, height, width }) => {
 
   const [mounted, setMounted] = useState(false);
   useEffect(() => {
@@ -17,7 +17,7 @@ const Moadl = ({ children, isOpen, onClose, title }) => {
   const modal = (
     <>
       <div className="modal-overlay" onClick={() => onClose()}/>
-      <div className="modal-container">
+      <div className="modal-container" style={{ height: height, width: width }}>
         {children}
       </div>
     </>

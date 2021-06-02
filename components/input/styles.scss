@@ -1,0 +1,28 @@
+@import "../../sharedStyles/colors.scss";
+@import "../../sharedStyles/fonts.scss";
+
+.input {
+  height: 40px;
+  border: 1px solid $Athens-50;
+  @include h3;
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 16px;
+  padding-left: 10px;
+  ::placeholder {
+    color: $input-text;
+  }
+}
+
+.select {
+  height: 40px;
+  border: 1px solid $Athens-50;
+  @include h3;
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 16px;
+  padding-left: 10px;
+  ::placeholder {
+    color: $input-text;
+  }
+}

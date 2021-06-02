@@ -9,7 +9,8 @@ const firebaseConfig = {
   projectId: "doctors-dev",
   storageBucket: "doctors-dev.appspot.com",
   messagingSenderId: "541433934142",
-  appId: "1:541433934142:web:2da33bc657d5bc01edfc6f"
+  appId: "1:541433934142:web:2da33bc657d5bc01edfc6f",
+  databaseURL: "https://doctors-dev-default-rtdb.firebaseio.com/"
 };
 
 if(!firebase.apps.length) {
@@ -18,7 +19,7 @@ if(!firebase.apps.length) {
 
 const auth = firebase.auth()
 
-const db = firebase.firestore();
+const db = firebase.database;
 
 export {
   auth,

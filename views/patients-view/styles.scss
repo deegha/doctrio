@@ -1,0 +1,40 @@
+@import "../../sharedStyles/colors.scss";
+@import "../../sharedStyles/fonts.scss";
+
+.patients-container {
+  display: flex;
+  flex-direction: row;
+  
+  .patients-navbar {
+    position: fixed;
+  }
+
+  .patients-content {
+    margin-left: 240px;
+    height: 200vh;
+    width: 100%;
+    min-width: 500px;
+
+    .patients-header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .patients-header-title {
+        @include h1;
+        margin-top: 40px;
+        margin-left: 40px;
+      }
+      .patients-header-btn {
+        margin-top: 40px;
+        margin-right: 40px;
+
+        .patients-modal-container {
+          background-color: red;
+        }
+      }
+    }
+
+
+  }
+}
