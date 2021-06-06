@@ -1,0 +1,74 @@
+@import "../../sharedStyles/colors.scss";
+@import "../../sharedStyles/fonts.scss";
+
+.patient-container {
+
+  display: flex;
+
+  .patient-content {
+    width: 100%;
+    .patient-header {
+      display: flex;
+      justify-content: space-between;
+      .patient-header-title {
+        margin-left: 30px;
+        &.name {
+          margin-top: 40px;
+          @include h1;
+          font-weight: 700;
+        }
+        &.id {
+          color: $input-text;
+        }
+      }
+      .patient-header-btns {
+        margin-top: 40px;
+        margin-right: 30px;
+        button {
+          margin-left: 10px;
+        }
+      }
+    }
+    
+    .patient-cards {
+      width: 100%;
+      .patient-cards-details {
+        margin-top: 40px;
+        margin-left: 60px;
+
+        .patient-cards-details-card {
+          width: 40%;
+          height: 100%;
+          min-width: 400px;
+
+          &.title {
+            margin-top: 16px;
+            margin-left: 16px;
+          }
+
+          .patient-cards-details-card-row {
+            display: flex;
+            margin-top: 12px;
+            margin-left: 16px;
+            @include paragraph;
+            position: relative;
+            &.last {
+              margin-bottom: 20px;
+            }
+            &.label {
+              color: $input-text;
+            }
+            &.value {
+              position: absolute;
+              margin-left: 30%;
+              font-weight: 600;
+              &.last {
+              }
+            }
+          }
+
+        }
+      }
+    }
+  }
+}

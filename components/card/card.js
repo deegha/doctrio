@@ -1,9 +1,9 @@
 import "./styles.scss";
 
-const Card = ({ children, type }) => {
+const Card = ({ children, type, className = ""}) => {
 
-  const className = !type? "card-primary": type === "secondary"? "card-secondary": "card-primary"
-  return <div className={className}>
+  const classNames = !type? `card-primary ${className}`: type === "secondary"? `card-secondary ${className}`: `card-primary ${className}`
+  return <div className={classNames}>
     { children }
   </div>
 }

@@ -1,5 +1,5 @@
-import "./styles.scss";
 import CloseIcon from "../../../static/icons/Close.svg"
+import "./styles.scss";
 
 const ModalHeader = ({ title, onClose }) => {
 

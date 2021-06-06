@@ -4,10 +4,10 @@ const Input = ({ type, placeholder, options, required, onChange, value }) => {
 
   if(type.toLowerCase() === "select") {
 
-    return <select className="select" required={required} onChange={onChange} value={value}>
+    return <select className="select" required={required} onChange={onChange}>
       <option disabled>Select gender</option>
       {
-        options.map((option, index) => <option key={index}>{option}</option>)
+        options.map((option, index) => <option key={index} value={option}>{option}</option>)
       }
     </select>
   }

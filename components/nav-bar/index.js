@@ -1,4 +1,3 @@
-import './styles.scss';
 import HomeImage from "../../static/icons/home.svg";
 import SessionsImage from "../../static/icons/calendar.svg";
 import PatientsImage from "../../static/icons/clipboard.svg";
@@ -7,7 +6,8 @@ import UsersImage from "../../static/icons/users.svg";
 import UserImage from "../../static/icons/user.svg";
 import HelpImage from "../../static/icons/help-circle.svg";
 import { useEffect, useRef, useState } from 'react';
-import { useRouter }  from "next/router"
+import { useRouter }  from "next/router";
+import './styles.scss';
 
 const NavBar = ({ href }) => {
 

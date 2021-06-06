@@ -1,14 +1,13 @@
-import "./styles.scss";
 import { createPortal } from "react-dom"
 import { useEffect, useState } from "react";
+import "./styles.scss";
 
 const Moadl = ({ children, isOpen, onClose, title, height, width }) => {
 
   const [mounted, setMounted] = useState(false);
   useEffect(() => {
     setMounted(true)
-    return () => setMounted(false)
-  }, mounted)
+  }, [mounted])
 
   if(!isOpen) {
     return null
@@ -23,7 +22,8 @@ const Moadl = ({ children, isOpen, onClose, title, height, width }) => {
     </>
   )
 
-  return mounted? createPortal(modal, document.querySelector("#modal")): null;
+  // return mounted? createPortal(modal, document.querySelector("#modal")): null;
+  return modal;
 
 }
 
